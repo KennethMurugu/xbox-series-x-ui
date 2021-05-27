@@ -5,8 +5,14 @@ import store from './store'
 
 Vue.config.productionTip = false
 
+//Fontawesome
+import './vendor/fontawesome'
+
+// Application-wide styling
+import '@/assets/styles/application.scss'
+
 new Vue({
-  router,
-  store,
-  render: h => h(App)
+	router,
+	store,
+	render: (h) => h(App),
 }).$mount('#app')
